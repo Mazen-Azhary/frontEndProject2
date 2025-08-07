@@ -10,60 +10,45 @@
   font-size: 8px;
   text-align: right;
 }
-
 .top-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1300px; 
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 5px 50px; 
+  padding: 5px 50px;
 }
-.top-header a {
+.nav-item {
   margin-left: 30px;
   text-decoration: none;
   color: #222;
-  transition: color 0.3s ease;
+  transition: color 0.5s ease;
   position: relative;
 }
-
-.nav-left a::before,.nav-left a::after,.nav-right a::before,.nav-right a::after {
-    content: '';
-    position: absolute;
-    width: 1.5px;
-    height: 0px;
-    bottom: 0;
-    left: 0;
-     background: linear-gradient(to bottom, rgb(62, 49, 250), rgb(135, 96, 246));
-    background: -webkit-linear-gradient(to bottom, rgb(62, 49, 250), rgb(135, 96, 246));
-    /*lin grad rgb(62,49,250) and rgb(135,96,246)   */
-    left: -10;
+.nav-item::before,.nav-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0px;
+  background: linear-gradient(to bottom, rgb(62, 49, 250), rgb(135, 96, 246));
+  background: -webkit-linear-gradient(to bottom, rgb(62, 49, 250), rgb(135, 96, 246));
+  transition: height 0.5s ease;
 }
-.nav-left a::after,.nav-right a::after{
-    top: 0;
-    right: 0;
-} 
-.nav-left :nth-child(1)::after{
-    left:40;
+.nav-item::after{
+  top: 0;
 }
-.nav-left :nth-child(2)::after,.nav-left :nth-child(4)::after{
-    left:33;
+.nav-item::before{
+bottom: -1.5px;
+  left: -10px;
 }
-.nav-left :nth-child(3)::after{
-    left:25;
+.nav-item:hover::before,.nav-item:hover::after {
+  height: 10px;
 }
 
-.nav-left a:hover::after,.nav-left a:hover::before,.nav-right a:hover::after,.nav-right a:hover::before {
-  transition: 0.5s ease;
-  height: 100%;
-}
-.nav-left a:hover::after,.nav-right a:hover::after {
-  transition: 0.5s ease;
-  height: 100%;
-}
+.nav-left :nth-child(1)::after {left: 40;}
+.nav-left :nth-child(2)::after,.nav-left :nth-child(4)::after {left: 33;}
+.nav-left :nth-child(3)::after {left: 25;}
 
-.nav-left a:first-child,.nav-right a:first-child {
-  margin-left: 0;
-}
-
-
+.nav-right :nth-child(1)::after {left: 45;}
+.nav-right :nth-child(2)::after {left: 63;}
+.nav-i::after{left: 15;}
