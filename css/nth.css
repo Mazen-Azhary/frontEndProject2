@@ -1,0 +1,78 @@
+.nav-item::after {
+  top: 0;
+}
+.nav-item::before {
+  bottom: -1.5px;
+  left: -10px;
+}
+.nav-item:hover::before,
+.nav-item:hover::after {
+  height: 10px;
+}
+.nav-left :nth-child(1)::after {
+  left: 40;
+}
+.nav-left :nth-child(2)::after,
+.nav-left :nth-child(4)::after {
+  left: 33;
+}
+.nav-left :nth-child(3)::after {
+  left: 25;
+}
+.nav-right :nth-child(1)::after {
+  left: 45;
+}
+.nav-right :nth-child(2)::after {
+  left: 63;
+}
+.nav-i::after {
+  left: 15;
+}
+.selectionsDiv :nth-child(1):hover::after {
+  width: 117%;
+  height: 147%;
+}
+.selectionsDiv :nth-child(1):hover::before {
+  width: 120%;
+  height: 145%;
+}
+.selectionsDiv :nth-child(2):hover::after {
+  width: 120%;
+  height: 147%;
+}
+.selectionsDiv :nth-child(2):hover::before {
+  width: 120%;
+  height: 145%;
+}
+.selectionsDiv :nth-child(3):hover::after {
+  width: 114%;
+  height: 147%;
+}
+.selectionsDiv :nth-child(3):hover::before {
+  width: 114%;
+  height: 145%;
+}
+.selectionsDiv :nth-child(4):hover::after {
+  width: 107%;
+  height: 147%;
+}
+.selectionsDiv :nth-child(4):hover::before {
+  width: 107%;
+  height: 145%;
+}
+.selectionsDiv :nth-child(5):hover::after {
+  width: 117%;
+  height: 147%;
+}
+.selectionsDiv :nth-child(5):hover::before {
+  width: 117%;
+  height: 145%;
+}
+.selectionsDiv :nth-child(6):hover::after {
+  width: 117%;
+  height: 147%;
+}
+.selectionsDiv :nth-child(6):hover::before {
+  width: 115%;
+  height: 145%;
+}
