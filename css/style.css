@@ -332,6 +332,7 @@ body {
   padding: 20px;
   margin-top: 10px;
   height: 380px;
+  position: relative;
 }
 .trending-2-div{
   background-color: var(--rm-white);
@@ -364,4 +365,65 @@ body {
 }
 .back{
   transform: rotateY(180deg);
+}
+.arrows{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+.arrows i:hover{
+  cursor: pointer;
+  color: var(--rm-gold);
+  transition: color 0.3s ease;
+}
+.backOptions ul{
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  background-color: var(--rm-gold);
+  border-radius: 5px;
+}
+.backOptions ul li{
+  margin: 10px 5px;
+  font-size: 16px;
+  color: var(--rm-text-dark);
+  cursor: pointer;
+}
+.backOptions ul li:hover{
+  color: var(--rm-white);
+  transition: color 0.3s ease;
+}
+.rotating-card:hover .backOptions ul {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
+  transition: opacity 3s ease, transform 3s ease;
+}
+.cardText {
+  margin-bottom: 0px;
+  padding-top: 20px;
+  text-align: center;
+  color: var(--rm-navy);
+}
+.cardText h3{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+.cardText p{
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--rm-text-dark);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
 }
