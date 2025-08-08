@@ -122,7 +122,7 @@ body{
   color: var(--rm-gold);
 }
  .item-count{
-  background: var(--rm-purple);
+  background: var(--rm-gold);
   width: 10px;
   height: 10px;
   text-align: center;
@@ -167,7 +167,7 @@ body{
 .first-2{
   height: 88vh;
   width: 100%;
-  background-image: url(../images/cristiano_ronaldo.avif);
+  background-image: url(../images/cristiano_ronaldo.png);
   background-position: center;
   background-size: cover;
   background-attachment: scroll;
@@ -210,9 +210,10 @@ body{
   border: 1px solid var(--rm-navy);
   border-radius: 5px;
   padding: 10px 20px;
-  margin-left: 65px;
+  margin-left: 45px;
   margin-top: 20px;
   font-size: 14px;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -220,4 +221,63 @@ body{
   background-color: var(--rm-navy);
   color: var(--rm-white);
   transition: background-color 0.3s ease;
+}
+/**********************************************************************/
+.fashionDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 100vh;
+  /* background-color: var(--rm-navy); */
+}
+.div1fashion{
+  height: 300px;
+  border-radius: 8px;
+  border: 3px solid var(--rm-gold);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.fashionComponents{
+  transform: translateY(265%);
+  background: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  padding: 15px;
+  text-align: center;
+}
+.div1fashion:hover .fashionComponents{
+  transition: 1s ease;
+  transform: translateY(120%);
+}
+.div1fashion:hover{
+  transform: scale(1.05,1.05);
+  transition: transform 0.3s ease;
+}
+.fashionComponents h3{
+  color: var(--rm-white);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  font-size: 18px;
+  margin-bottom: 10px;
+  background: none !important;
+  background-color: transparent !important;
+}
+.fashionComponents button{
+  background-color: var(--rm-gold);
+  color: var(--rm-white);
+  border: 2px solid var(--rm-white);
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.fashionComponents button:hover{
+  background-color: var(--rm-white);
+  color: var(--rm-gold);
+  border: 2px solid var(--rm-gold);
 }
