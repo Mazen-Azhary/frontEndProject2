@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
   /* Real Madrid Color Palette */
-  --rm-white: #FFFFFF;
-  --rm-navy: #1A3E72;
-  --rm-gold: #C4A747;
-  --rm-purple: #5C1E5F;
+  --rm-white: #ffffff;
+  --rm-navy: #1a3e72;
+  --rm-gold: #c4a747;
+  --rm-purple: #5c1e5f;
   --rm-text-dark: #222222;
-  --rm-border-light: #DDDDDD;
+  --rm-border-light: #dddddd;
 }
-body{
+body {
   height: 3000px;
 }
 * {
@@ -39,7 +39,8 @@ body{
   transition: color 0.5s ease;
   position: relative;
 }
-.nav-item::before,.nav-item::after {
+.nav-item::before,
+.nav-item::after {
   content: "";
   position: absolute;
   width: 2px;
@@ -48,13 +49,13 @@ body{
   transition: height 0.5s ease;
 }
 
-.nav-item:hover i{
-  transform:rotateY(180deg);
+.nav-item:hover i {
+  transform: rotateY(180deg);
   transition: transform 0.3s ease;
   color: var(--rm-gold);
 }
 /**********************************************************************/
-.bottom-nav{
+.bottom-nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -62,9 +63,9 @@ body{
   max-height: 100px;
   margin: 0 auto;
   padding: 0px 20px;
-    border-bottom: 1px solid var(--rm-gold);
+  border-bottom: 1px solid var(--rm-gold);
 }
-.logoDiv img{
+.logoDiv img {
   width: 80px;
   height: auto;
   margin-left: 32px;
@@ -77,26 +78,27 @@ body{
   margin: 0 10px;
   transition: color 0.3s ease;
 }
-.selectionsItem::before,.selectionsItem::after {
+.selectionsItem::before,
+.selectionsItem::after {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
-  border:0px solid;
+  border: 0px solid;
   border-color: var(--rm-gold);
   transition: all 0.3s ease;
 }
 .selectionsItem:hover::before {
-  border-left:2px solid;
-  border-bottom:2px solid;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
 }
 .selectionsItem:hover {
   transition: transform 0.7s ease;
   color: var(--rm-gold);
 }
 .selectionsItem:hover::after {
-  border-right:2px solid;
-  border-top:2px solid;
+  border-right: 2px solid;
+  border-top: 2px solid;
 }
 .selectionsItem::after {
   top: -4px;
@@ -110,18 +112,18 @@ body{
   border-right: none;
   border-top: none;
 }
-.iconItem{
+.iconItem {
   text-decoration: none;
   color: var(--rm-navy);
   font-size: 12px;
   margin: 0 15px;
   transition: color 0.3s ease;
 }
-.iconItem:hover{
+.iconItem:hover {
   transition: transform 0.7s ease;
   color: var(--rm-gold);
 }
- .item-count{
+.item-count {
   background: var(--rm-gold);
   width: 10px;
   height: 10px;
@@ -134,17 +136,16 @@ body{
   border-left: none;
   border-bottom: none;
   border-radius: 50%;
-} 
-.iconsDiv :nth-child(3){
+}
+.iconsDiv :nth-child(3) {
   position: relative;
-} 
-.iconsDiv :nth-child(3):hover .item-count{
+}
+.iconsDiv :nth-child(3):hover .item-count {
   bottom: 12;
   transition: all 0.3s ease;
-}  
-
+}
 /**********************************************************************/
-.first-section{
+.first-section {
   background: var(--rm-navy);
   color: var(--rm-white);
   height: 30px;
@@ -153,7 +154,7 @@ body{
   text-align: center;
   word-spacing: 5px;
 }
-.first-section a{
+.first-section a {
   text-decoration: underline;
   color: var(--rm-gold);
   font-weight: bold;
@@ -164,7 +165,7 @@ body{
   transition: 0.3s ease;
   letter-spacing: 1.5px;
 }
-.first-2{
+.first-2 {
   height: 88vh;
   width: 100%;
   background-image: url(../images/cristiano_ronaldo.png);
@@ -172,17 +173,17 @@ body{
   background-size: cover;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background-position-y:30% ;
+  background-position-y: 30%;
   position: relative;
 }
-.second-section-div{
+.second-section-div {
   position: absolute;
   top: 15%;
   left: 15%;
   transform: translate(-20%, -15%);
   text-align: left;
 }
-.second-section-div h4{
+.second-section-div h4 {
   text-align: center;
   color: var(--rm-white);
   font-family: "Dancing Script", cursive;
@@ -191,20 +192,20 @@ body{
   font-style: normal;
   font-size: 50px;
   margin-top: 20px;
-  text-shadow: 8px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 8px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.second-section-div h5{
+.second-section-div h5 {
   color: var(--rm-white);
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-weight: 400;
   font-style: italic;
   font-size: 15px;
   margin-top: 15px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   max-width: 600px;
   line-height: 1.5;
 }
-.second-section-div button{
+.second-section-div button {
   background-color: var(--rm-gold);
   color: var(--rm-navy);
   border: 1px solid var(--rm-navy);
@@ -223,25 +224,24 @@ body{
   transition: background-color 0.3s ease;
 }
 /**********************************************************************/
-.fashionDiv{
+.fashionDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 20px;
   margin-top: 100vh;
-  /* background-color: var(--rm-navy); */
 }
-.div1fashion{
+.div1fashion {
   height: 300px;
   border-radius: 8px;
   border: 3px solid var(--rm-gold);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
-.fashionComponents{
+.fashionComponents {
   transform: translateY(265%);
   background: none !important;
   background-color: transparent !important;
@@ -249,23 +249,23 @@ body{
   padding: 15px;
   text-align: center;
 }
-.div1fashion:hover .fashionComponents{
+.div1fashion:hover .fashionComponents {
   transition: 1s ease;
   transform: translateY(120%);
 }
-.div1fashion:hover{
-  transform: scale(1.05,1.05);
+.div1fashion:hover {
+  transform: scale(1.05, 1.05);
   transition: transform 0.3s ease;
 }
-.fashionComponents h3{
+.fashionComponents h3 {
   color: var(--rm-white);
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   font-size: 18px;
   margin-bottom: 10px;
   background: none !important;
   background-color: transparent !important;
 }
-.fashionComponents button{
+.fashionComponents button {
   background-color: var(--rm-gold);
   color: var(--rm-white);
   border: 2px solid var(--rm-white);
@@ -276,8 +276,51 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.fashionComponents button:hover{
+.fashionComponents button:hover {
   background-color: var(--rm-white);
   color: var(--rm-gold);
   border: 2px solid var(--rm-gold);
+}
+/**********************************************************************/
+.trendingContainer {
+  height: 400px;
+  margin: 30px auto;
+  width: 93%;
+}
+.trending-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--rm-navy);
+  padding: 5px 20px;
+}
+.trending-1 h5 {
+  color: var(--rm-text-dark);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.trending-1 ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+}
+.trending-1 ul li {
+  margin: 0 10px;
+  font-size: 18px;
+  color: var(--rm-navy);
+  font-weight: bold;
+}
+.first-li li {
+  color: var(--rm-gold) !important;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.trending-1 ul li:hover {
+  color: var(--rm-gold);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: all 0.5s ease;
 }
