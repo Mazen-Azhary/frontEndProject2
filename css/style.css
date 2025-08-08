@@ -10,7 +10,8 @@
   --rm-border-light: #dddddd;
 }
 body {
-  height: 3000px;
+  /* height: 3000px; */
+  perspective: 600px;
 }
 * {
   margin: 0;
@@ -323,4 +324,44 @@ body {
   cursor: pointer;
   text-decoration: underline;
   transition: all 0.5s ease;
+}
+.trending-2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  height: 380px;
+}
+.trending-2-div{
+  background-color: var(--rm-white);
+  border: 2px solid var(--rm-gold);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+.rotating-card{
+  position: relative;
+  transition: all 2s;
+  height: 230px;
+  transform-style: preserve-3d;
+}
+.rotating-card:hover{
+  transform: rotateY(180deg);
+}
+.front,.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.front{
+  z-index: 1;
+}
+.back{
+  transform: rotateY(180deg);
 }
