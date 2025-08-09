@@ -492,13 +492,11 @@ body {
 .testimonialSection {
   background: linear-gradient(135deg, var(--rm-navy) 0%, var(--rm-purple) 100%);
   background: -webkit-linear-gradient(135deg, var(--rm-navy) 0%, var(--rm-purple) 100%);
-  padding: 60px 20px;
+  padding: 30px 20px;
   margin-top: 50px;
   position: relative;
   overflow: hidden;
 }
-
-
 .testimonialContainer {
   max-width: 900px;
   max-height: 500px; 
@@ -576,4 +574,36 @@ body {
 }
 .testimonialData p{
   color: var(--rm-gold);
+}
+/*************************************************************/
+.rotating-card-2{
+  position: relative;
+  transition: all 2s;
+  height: 230px;
+}
+.iconDiv{
+ position: relative;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.iconDiv::after{
+  position: absolute;
+   width: 100%;
+   height: 100%;   
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-image: url(../images/carlosFace.webp);
+   top: -100;
+   left: 0;
+   content: "";
+   opacity: 0;
+}
+.iconDiv:hover::after{
+  top:0;
+  opacity: 1;
+  transition: all 1s ease;
 }
