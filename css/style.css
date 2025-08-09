@@ -113,6 +113,65 @@ body {
   border-right: none;
   border-top: none;
 }
+.selectionsDiv ul{
+  list-style: none;
+  padding: 0;
+}
+.selectionsDiv ul li{
+  display: inline-block;
+}
+.pagesDropDown{
+  width: 200px;
+  height: 150px;
+  left: 49%;
+  top: 85px;
+  z-index: 3;
+  border:2px solid var(--rm-gold);
+  border-radius: 5px;
+  background-color: var(--rm-white);
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  gap: 45px;
+  padding: 10px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.ho:hover .pagesDropDown{
+  top:65px;
+  transition: all 1s ease;
+  transform: scale(1);
+  opacity: 1 ;
+}
+.pagesDropDown h6{
+    font-size: 12px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: var(--rm-gold) 2px dotted;
+    padding-bottom: 2px;
+    width: fit-content;
+}
+.pagesDropDown ul li{
+  display: block;
+  padding: 7px 0;
+  font-size: 10px;
+}
+.pagesDropDown ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--rm-navy);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: color 0.3s ease;
+}
+.pagesDropDown ul li a:hover{
+  color: var(--rm-gold);
+}
+.pagesDropDown ul li:hover{
+  transform: scaleX(1.1);
+  transition: transform 0.3s ease;
+}
+ 
 .iconItem {
   text-decoration: none;
   color: var(--rm-navy);
