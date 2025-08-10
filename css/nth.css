@@ -96,4 +96,15 @@
 .rel{
   position: relative;
 }
-
+.a1::after{
+  background-image: url(../images/carlosFace.webp);
+}
+.a2::after{
+  background-image: url(../images/ramosFace.avif);
+}
+.a3::after{
+  background-image: url(../images/zidaneFace.jpeg);
+}
+.a4::after{
+  background-image: url(../images/baleFace.jpeg);
+}

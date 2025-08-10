@@ -397,7 +397,7 @@ body {
 .trending-2-div{
   background-color: var(--rm-white);
   border: 2px solid var(--rm-gold);
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   text-align: center;
 }
@@ -579,10 +579,10 @@ body {
 .rotating-card-2{
   position: relative;
   transition: all 2s;
-  height: 230px;
+  height: 230px;  
 }
 .iconDiv{
- position: relative;
+  position: relative;
   width: 100%;
   height: 100%;
   background-position: center;
@@ -591,19 +591,54 @@ body {
 }
 .iconDiv::after{
   position: absolute;
-   width: 100%;
-   height: 100%;   
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-image: url(../images/carlosFace.webp);
-   top: -100;
-   left: 0;
-   content: "";
-   opacity: 0;
+  width: 100%;
+  height: 100%;   
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  top: -100;
+  left: 0;
+  content: "";
+  opacity: 0;
+  transition: all 1s ease;
 }
 .iconDiv:hover::after{
   top:0;
   opacity: 1;
   transition: all 1s ease;
+}
+
+.backOptions-2 ul{
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 0;
+  background-color: var(--rm-gold);
+  border-radius: 5px;
+  transition: all 1s ease;
+  z-index: 4;
+}
+.backOptions-2 ul li{
+  margin: 10px 5px;
+  font-size: 16px;
+  color: var(--rm-text-dark);
+  cursor: pointer;
+}
+.iconDiv:hover .backOptions-2 ul{
+  opacity: 1;
+  color: var(--rm-white);
+  transition: all 2s ease;
+  bottom:20;
+}
+.backOptions-2 ul li:hover{
+  color: var(--rm-white);
+  transition: color 0.3s ease;
 }
