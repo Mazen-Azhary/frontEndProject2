@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
-  /* Real Madrid Color Palette */
   --rm-white: #ffffff;
   --rm-navy: #1a3e72;
   --rm-gold: #c4a747;
@@ -12,11 +16,6 @@
 body {
   height: 6000px;
   perspective: 600px;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .top-header {
@@ -56,6 +55,7 @@ body {
   color: var(--rm-gold);
 }
 /**********************************************************************/
+
 .bottom-nav {
   display: flex;
   justify-content: space-around;
@@ -113,20 +113,20 @@ body {
   border-right: none;
   border-top: none;
 }
-.selectionsDiv ul{
+.selectionsDiv ul {
   list-style: none;
   padding: 0;
 }
-.selectionsDiv ul li{
+.selectionsDiv ul li {
   display: inline-block;
 }
-.pagesDropDown{
+.pagesDropDown {
   width: 200px;
   height: 150px;
   left: 49%;
   top: 85px;
   z-index: 3;
-  border:2px solid var(--rm-gold);
+  border: 2px solid var(--rm-gold);
   border-radius: 5px;
   background-color: var(--rm-white);
   position: absolute;
@@ -139,39 +139,39 @@ body {
   opacity: 0;
   transition: all 1s ease;
 }
-.ho:hover .pagesDropDown{
-  top:65px;
+.ho:hover .pagesDropDown {
+  top: 65px;
   transition: all 1s ease;
   transform: scale(1);
-  opacity: 1 ;
+  opacity: 1;
 }
-.pagesDropDown h6{
-    font-size: 12px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    border-bottom: var(--rm-gold) 2px dotted;
-    padding-bottom: 2px;
-    width: fit-content;
+.pagesDropDown h6 {
+  font-size: 12px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-bottom: var(--rm-gold) 2px dotted;
+  padding-bottom: 2px;
+  width: fit-content;
 }
-.pagesDropDown ul li{
+.pagesDropDown ul li {
   display: block;
   padding: 7px 0;
   font-size: 10px;
 }
-.pagesDropDown ul li a{
+.pagesDropDown ul li a {
   text-decoration: none;
   cursor: pointer;
   color: var(--rm-navy);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   transition: color 0.3s ease;
 }
-.pagesDropDown ul li a:hover{
+.pagesDropDown ul li a:hover {
   color: var(--rm-gold);
 }
-.pagesDropDown ul li:hover{
+.pagesDropDown ul li:hover {
   transform: scaleX(1.1);
   transition: transform 0.3s ease;
 }
- 
+
 .iconItem {
   text-decoration: none;
   color: var(--rm-navy);
@@ -303,7 +303,7 @@ body {
   transition: background-size 0.9s ease;
 }
 .fashionComponents {
-  transition: all 1s cubic-bezier(0.4,0,0.2,1);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(265%);
   background: none !important;
   background-color: transparent !important;
@@ -316,7 +316,7 @@ body {
   transform: translateY(120%);
 }
 .div1fashion:hover {
-  background-size: 130% !important; 
+  background-size: 130% !important;
 }
 .fashionComponents h3 {
   color: var(--rm-white);
@@ -385,32 +385,33 @@ body {
   text-decoration: underline;
   transition: all 0.5s ease;
 }
-.trending-2{
+.trending-2 {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   padding: 20px;
   margin-top: 10px;
   height: 380px;
   position: relative;
 }
-.trending-2-div{
+.trending-2-div {
   background-color: var(--rm-white);
   border: 2px solid var(--rm-gold);
   border-radius: 10px;
   padding: 10px;
   text-align: center;
 }
-.rotating-card{
+.rotating-card {
   position: relative;
   transition: all 2s;
   height: 230px;
   transform-style: preserve-3d;
 }
-.rotating-card:hover{
+.rotating-card:hover {
   transform: rotateY(180deg);
 }
-.front,.back{
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -418,15 +419,14 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
-.front{
+.front {
   z-index: 1;
 }
-.back{
+.back {
   transform: rotateY(180deg);
 }
-.arrows{
+.arrows {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -435,12 +435,12 @@ body {
   transform: translateY(-50%);
   font-size: 20px;
 }
-.arrows i:hover{
+.arrows i:hover {
   cursor: pointer;
   color: var(--rm-gold);
   transition: color 0.3s ease;
 }
-.backOptions ul{
+.backOptions ul {
   list-style: none;
   position: absolute;
   bottom: 0;
@@ -455,13 +455,13 @@ body {
   background-color: var(--rm-gold);
   border-radius: 5px;
 }
-.backOptions ul li{
+.backOptions ul li {
   margin: 10px 5px;
   font-size: 16px;
   color: var(--rm-text-dark);
   cursor: pointer;
 }
-.backOptions ul li:hover{
+.backOptions ul li:hover {
   color: var(--rm-white);
   transition: color 0.3s ease;
 }
@@ -476,22 +476,26 @@ body {
   text-align: center;
   color: var(--rm-navy);
 }
-.cardText h3{
+.cardText h3 {
   font-size: 14px;
   margin-bottom: 10px;
-  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
 }
-.cardText p{
+.cardText p {
   font-size: 14px;
   font-weight: 600;
   color: var(--rm-text-dark);
-  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-family: "Segoe UI", "Roboto", "Arial", sans-serif;
 }
 
 /**********************************************************************/
 .testimonialSection {
   background: linear-gradient(135deg, var(--rm-navy) 0%, var(--rm-purple) 100%);
-  background: -webkit-linear-gradient(135deg, var(--rm-navy) 0%, var(--rm-purple) 100%);
+  background: -webkit-linear-gradient(
+    135deg,
+    var(--rm-navy) 0%,
+    var(--rm-purple) 100%
+  );
   padding: 30px 20px;
   margin-top: 50px;
   position: relative;
@@ -499,7 +503,7 @@ body {
 }
 .testimonialContainer {
   max-width: 900px;
-  max-height: 500px; 
+  max-height: 500px;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -512,7 +516,7 @@ body {
   font-weight: bold;
   margin-bottom: 30px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-family: 'Bebas Neue', 'Arial Black', sans-serif;
+  font-family: "Bebas Neue", "Arial Black", sans-serif;
   letter-spacing: 2px;
   position: relative;
 }
@@ -536,10 +540,10 @@ body {
   max-width: 800px;
   margin: 0 auto;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-style: italic;
 }
-.arrowsTestimonial{
+.arrowsTestimonial {
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -550,49 +554,49 @@ body {
   color: var(--rm-gold);
   margin-left: -10px;
 }
-.arrowsTestimonial i:hover{
+.arrowsTestimonial i:hover {
   cursor: pointer;
   color: var(--rm-border-light);
   transition: color 0.3s ease;
 }
-.testimonialPerson{
+.testimonialPerson {
   position: relative;
   margin-top: 30px;
 }
-.testimonialPerson img{
+.testimonialPerson img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   margin-left: -150px;
 }
-.testimonialData{
+.testimonialData {
   position: absolute;
   top: 30%;
   left: 50%;
   text-align: center;
   color: var(--rm-white);
 }
-.testimonialData p{
+.testimonialData p {
   color: var(--rm-gold);
 }
 /*************************************************************/
-.rotating-card-2{
+.rotating-card-2 {
   position: relative;
   transition: all 2s;
-  height: 230px;  
+  height: 230px;
 }
-.iconDiv{
+.iconDiv {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 230px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.iconDiv::after{
+.iconDiv::after {
   position: absolute;
   width: 100%;
-  height: 100%;   
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -603,13 +607,13 @@ body {
   opacity: 0;
   transition: all 1s ease;
 }
-.iconDiv:hover::after{
-  top:0;
+.iconDiv:hover::after {
+  top: 0;
   opacity: 1;
   transition: all 1s ease;
 }
 
-.backOptions-2 ul{
+.backOptions-2 ul {
   list-style: none;
   position: absolute;
   bottom: 0;
@@ -626,19 +630,118 @@ body {
   transition: all 1s ease;
   z-index: 4;
 }
-.backOptions-2 ul li{
+.backOptions-2 ul li {
   margin: 10px 5px;
   font-size: 16px;
   color: var(--rm-text-dark);
   cursor: pointer;
 }
-.iconDiv:hover .backOptions-2 ul{
+.iconDiv:hover .backOptions-2 ul {
   opacity: 1;
   color: var(--rm-white);
   transition: all 2s ease;
-  bottom:20;
+  bottom: 20;
 }
-.backOptions-2 ul li:hover{
+.backOptions-2 ul li:hover {
   color: var(--rm-white);
   transition: color 0.3s ease;
+}
+/************************************************************************/
+.latest-news-container {
+  background: linear-gradient(90deg, var(--rm-navy) 60%, var(--rm-gold) 100%);
+  padding: 40px 30px;
+  margin-top: 20px;
+  min-width: 873.5px;
+  margin-left: -35px;
+}
+
+.latest-content {
+  background: var(--rm-white);
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(26, 62, 114, 0.12),
+    0 1.5px 6px rgba(196, 167, 71, 0.08);
+  padding: 32px 36px 28px 36px;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.latest-content h6 {
+  color: var(--rm-navy);
+  font-size: 22px;
+  font-family: "Bebas Neue", Arial, sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+  font-weight: bold;
+  position: relative;
+}
+.latest-content h6::after {
+  content: "";
+  display: block;
+  margin: 5px auto 0 auto;
+  width: 60px;
+  height: 3px;
+  background: var(--rm-gold);
+  border-radius: 2px;
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 10px;
+}
+
+.latest1 {
+  box-shadow: 0 2px 12px rgba(26, 62, 114, 0.1);
+  min-height: 230px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  padding-bottom: 10px;
+}
+.latest1:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(26, 62, 114, 0.18),
+    0 2px 8px rgba(196, 167, 71, 0.1);
+}
+.latest1 h3 {
+  color: var(--rm-navy);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.latest1:hover h3 {
+  color: var(--rm-gold);
+  transition: all 1s;
+}
+.latest1 a {
+  color: var(--rm-purple);
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 10px;
+
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.latest1:hover a {
+  color: var(--rm-gold);
+  letter-spacing: 1.2;
+  transition: all 1s;
+}
+
+.latestImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 190px;
+  border-radius: 12px;
 }
