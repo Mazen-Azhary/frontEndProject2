@@ -1,0 +1,125 @@
+/* Inch-perfect media query for Real Madrid Store UI */
+
+@media (max-width: 1300px) {
+  .top-nav, .bottom-nav {
+    max-width: 100vw;
+    padding: 5px 10px;
+  }
+  .logoDiv img {
+    width: 60px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .fashionDiv {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 10px;
+  }
+  .div1fashion {
+    height: 220px;
+  }
+  .trendingContainer {
+    width: 99vw;
+    margin: 10px auto;
+    height: 340px;
+  }
+  .trending-2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+    padding: 10px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 900px) {
+  .latest-news-container {
+    min-width: 100vw;
+    margin-left: 0;
+    padding: 20px 2vw;
+  }
+  .latest-content {
+    padding: 18px 2vw;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .latest-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    max-width: 100vw;
+  }
+  .latest1 {
+    min-height: 120px;
+    padding-bottom: 6px;
+  }
+  .testimonialContainer {
+    max-width: 98vw;
+    padding: 0 2vw;
+  }
+  .testimonialPerson img {
+    width: 70px;
+    height: 70px;
+    margin-left: -60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-header {
+    font-size: 6px;
+  }
+  .top-nav, .bottom-nav {
+    flex-direction: column;
+    padding: 2px 2vw;
+  }
+  .selectionsDiv ul li, .iconsDiv a {
+    margin: 0 2px;
+    font-size: 10px;
+  }
+  .fashionDiv {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 4px;
+  }
+  .div1fashion {
+    height: 120px;
+  }
+  .trendingContainer {
+    width: 100vw;
+    height: 220px;
+    margin: 2px auto;
+  }
+  .trending-2 {
+    grid-template-columns: 1fr;
+    grid-gap: 4px;
+    padding: 2px;
+    height: 180px;
+  }
+  .latest-content {
+    padding: 8px 1vw;
+  }
+  .latest1 {
+    min-height: 80px;
+    font-size: 12px;
+  }
+  .testimonialContainer h2 {
+    font-size: 18px;
+  }
+  .testimonialPerson img {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+  }
+}
+
+/* For ultra small screens */
+@media (max-width: 400px) {
+  .latest-content, .testimonialContainer {
+    padding: 2px 0.5vw;
+    font-size: 10px;
+  }
+  .latest1 {
+    min-height: 40px;
+    font-size: 10px;
+  }
+}
